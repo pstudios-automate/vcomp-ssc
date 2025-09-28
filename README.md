@@ -13,19 +13,23 @@ Designed for speed and stability: **~101ms startup, ~7.8ms window creation, zero
 - **Window Manager** – efficient creation, hit-testing, and edge-case handling.  
 - **Input Dispatch System** – event routing with millisecond accuracy.  
 - **Benchmark Suite** – integrated performance metrics for system & GPU.  
-- **Screenshot Tool** – captures compositor framebuffer output to `.ppm`/`.png`.  
+- **Screenshot Tool** – captures compositor framebuffer output to `.ppm` and `.png`.  
 
 ---
 
-## 📊 Performance Benchmarks
+## 📊 Comprehensive Benchmarks
 
 ### System & Window Manager
-| Test                     | Avg Time       | Notes                                |
-|--------------------------|----------------|--------------------------------------|
-| **Desktop Startup**      | **0.1009 s**   | Near-instant boot into environment   |
-| **Window Creation**      | **0.0078 s**   | Consistent across 10 iterations      |
-| **Input Dispatch**       | **0.2577 s**   | Stable per-event processing          |
-| **Stress Test (Windows)**| **Stable**     | Multiple iterations, no crashes      |
+| Test                          | Result/Avg Time | Notes                                   |
+|-------------------------------|-----------------|-----------------------------------------|
+| **Desktop Startup**           | **0.1009 s**    | Near-instant boot into environment      |
+| **Window Creation**           | **0.0078 s**    | 3/3 windows created in unit test        |
+| **Hit Detection**             | **7/7 Passed**  | Correct window/background identification|
+| **Edge Cases**                | **Handled**     | Negative coords + 1×1 pixel window      |
+| **Input Dispatch**            | **0.2577 s**    | Stable per-event processing             |
+| **Stress Test (Windows)**     | **Stable**      | 5 iterations, no crashes                |
+| **Screenshot Tool**           | **Working**     | Framebuffer dump saved to PPM/PNG       |
+| **Integration**               | **OK**          | Window manager linked with compositor   |
 
 ### GPU Compositor (Intel Iris Xe, Mesa 25.2.3)
 | Resolution   | Layers | Frame Time (s) | VRAM Usage   |
