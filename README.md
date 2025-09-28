@@ -1,52 +1,56 @@
-# 🚀 VizOS - High-Performance Desktop Environment
+# VizOS  
+[![Build](https://img.shields.io/github/actions/workflow/status/pstudios-automate/vizos/ci.yml?branch=master)](https://github.com/pstudios-automate/vizos/actions)  
+[![License: MIT](https://img.shields.io/github/license/pstudios-automate/vizos)](LICENSE)  
+[![Stars](https://img.shields.io/github/stars/pstudios-automate/vizos?style=social)](https://github.com/pstudios-automate/vizos)  
 
-> **Lightning-fast, hardware-accelerated desktop environment built from scratch**
+⚡ **VizOS** is a high-performance, Vulkan-accelerated desktop environment.  
+Designed for speed and efficiency: **~101ms startup, ~7.8ms window creation**.  
 
-## 🎯 Features
+---
 
-- ⚡ **101ms cold startup** (20-50x faster than traditional DEs)
-- 🖥️ **Hardware-accelerated compositing** with Vulkan 1.4
-- 🪟 **Efficient window management** (7.8ms window creation)
-- 📦 **Minimal dependencies** - no systemd, dbus, or bloat
+## ✨ Features
+- **Vulkan Compositor** – hardware-accelerated rendering pipeline with fallback.  
+- **Window Manager** – creation, hit-testing, and edge-case handling.  
+- **Input Dispatch System** – event routing for mouse/keyboard devices.  
+- **Benchmark Suite** – measure performance on real hardware.  
+- **Screenshot Tool** – direct compositor framebuffer capture to `.ppm`/`.png`.  
+
+---
+
+## 📊 Benchmarks
+
+| Test                  | Avg Time     |
+|-----------------------|--------------|
+| **Desktop Startup**   | 101 ms       |
+| **Window Creation**   | 7.8 ms       |
+| **Input Dispatch**    | 257 ms/event |
+| **GPU Compositor**    | Stable at 4K, ~320 MB VRAM @ 4 layers |
+
+> Benchmarks run on Intel Iris Xe (Mesa 25.2.3, Vulkan 1.4.318).  
+
+---
+
+## 🖥️ Screenshot
+Example compositor output:  
+
+![VizOS Compositor](docs/vizos_screenshot.png)  
+
+---
 
 ## 🚀 Quick Start
 
-\`\`\`bash
+```bash
+# Clone repository
+git clone https://github.com/pstudios-automate/vizos.git
+cd vizos
+
 # Build everything
 ./build_all.sh
 
-# Run tests
+# Run quick system check
+./vizos_quick_check.sh
+
+# Run full benchmark suite
 ./vizos_benchmark.sh
 
-# Start desktop
-./build/vizos_desktop
-\`\`\`
-
-## 📊 Performance
-
-| Metric | VizOS | Traditional DE | Advantage |
-|--------|-------|----------------|-----------|
-| **Startup Time** | ⚡ **101ms** | 2-5 seconds | **20-50x faster** |
-| **Window Creation** | ⚡ **7.8ms** | 50-100ms | **6-12x faster** |
-
-## 🛠 Architecture
-
-Modern desktop environment with:
-- Vulkan-accelerated compositor
-- Efficient window manager
-- Event-driven input system
-- Minimal resource usage
-
-See docs/ARCHITECTURE.md for details.
-
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: Chris Waite
-- Email: 666studio.p@gmail.com
-***not expected but greatly appreciated
-CASHTAG $MikiShawv101
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-# VizOS - Sun Sep 28 06:56:54 PM EDT 2025
+Eof
