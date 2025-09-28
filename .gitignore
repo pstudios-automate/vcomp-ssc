@@ -1,0 +1,31 @@
+# Build artifacts
+/build/
+*.o
+*.so
+*.a
+
+# Binaries
+/vizos_desktop
+/window_manager_test
+/input_dispatch_test  
+/vulkan_compositor_test
+/screenshot
+/fb_screenshot
+
+# Generated files
+*.png
+*.ppm
+*.log
+*.txt
+benchmark_*
+vizos_validation_*
+
+# Development files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Documentation
+/docs/_build/
