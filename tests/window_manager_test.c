@@ -1,4 +1,6 @@
+#include "../src/window_manager.h"
 /*
+#include "../src/window_manager.h"
  * VizOS - High-performance desktop environment
  * Copyright (c) 2025 Your Name
  *
