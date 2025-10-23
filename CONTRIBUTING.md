@@ -1,32 +1,24 @@
-# Contributing to VizOS
+# 🤝 Contributing to V-Comp SSC
+Welcome to **V-Comp SSC**, the world’s first Vulkan-native operating-system compositor.  
+Your contributions help refine the frontier of GPU-driven computing.
 
-We love your input! We want to make contributing to VizOS as easy and transparent as possible.
+---
 
-## Development Process
+## ⚙️ Development Principles
+All code in V-Comp SSC is built on four core values:
 
-1. Fork the repo and create your branch from `main`
-2. Make your changes
-3. Ensure all tests pass: `./vizos_benchmark.sh`
-4. Submit a pull request
+1. **Determinism —** predictable execution within 1 ms tolerance.  
+2. **GPU Native —** Vulkan-first; CPU fallbacks discouraged.  
+3. **Minimalism —** explicit resource control, zero bloat.  
+4. **Transparency —** every subsystem documented and benchmarked.
 
-## Code Style
+---
 
-- Use descriptive variable names
-- Comment complex algorithms
-- Follow existing code formatting
-- Write tests for new features
-
-## Testing
-
-All contributions must pass:
-```bash
-./vizos_benchmark.sh        # Full test suite
-./vizos_quick_check.sh      # Basic validation
-
-## Contact
-
-For questions about contributing, please contact:
-- **Chris Waite**: 666studio.p@gmail.com
-- **GitHub Issues**: [Create an issue](https://github.com/yourusername/vcomp/issues)
-
-Not expected but helps tremendously CASHTAG $MikiShawv101
+## 🧱 Repository Layout
+| Directory | Description |
+|------------|-------------|
+| `src/` | Core compositor, input, and window-manager source |
+| `tests/` | Unit and integration benchmarks |
+| `docs/` | Architecture notes, screenshots, visual manifests |
+| `build/` | Compiled artifacts |
+| `scripts/` | Automation and maintenance utilities |

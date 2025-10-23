@@ -1,6 +1,39 @@
-# This is the list of VizOS contributors
+# 🧩 V-Comp SSC — Core Authors & Contributors
+> *The World’s First Vulkan-Native Operating System Compositor.*
 
-[Chris Waite] <666studio.p@gmail.com>
+---
 
-Contributions Greatly Appreciated(but of course not expected please enjoy)
-Cashtag $MikiShawv101
+### 🧠 Lead Architect & Principal Developer
+**Chip (Chris Waite)** — *P-Studios / Karma Labs*  
+> Founder and primary engineer behind V-Comp SSC and Karma OS.  
+> Responsible for complete system architecture, Vulkan integration,  
+> performance benchmarking, memory scheduling, and overall product vision.  
+> Combines decades of software, hardware, and design expertise across  
+> mechanical, electrical, and GPU domains to build the first true  
+> Vulkan-driven operating-system compositor.
+
+---
+
+### 🧱 Engineering Domains
+| Area | Contributor | Role |
+|-------|--------------|------|
+| **Compositor Core** | **Chris Waite** | Vulkan pipeline, synchronization, VRAM scheduler |
+| **Input System** | **Chris Waite** | Latency routing, event fusion, hardware I/O integration |
+| **Window Manager** | **Chris Waite** | Z-order logic, spatial queries, micro-optimized memory handling |
+| **Benchmark & QA** | **Chris Waite** | Test harnesses, regression metrics, diagnostic tooling |
+| **Documentation** | **Chris Waite** | Technical writing, architecture briefs, developer guides |
+
+---
+
+### 💡 Special Thanks
+- The **Vulkan SDK** / **Khronos Group** for advancing open GPU standards.  
+- The **Linux graphics community** for its relentless innovation.  
+- All early testers who validated timing, frame pacing, and compositing stability.
+
+---
+
+### 📄 License & Attribution
+Released under the [MIT License](LICENSE).  
+Attribution to *Chris Waite (Chip)* and *P-Studios / Karma Labs* is appreciated in derivative works.
+
+> “V-Comp SSC — Where the GPU becomes the OS.”
