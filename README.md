@@ -68,7 +68,7 @@ A full compositor, renderer, and input dispatcher unified at the GPU level — *
 ## 🖼️ Visual Output
 
 <p align="center">
-  <img src="docs/vizos_output.png" width="75%" alt="V-Comp Frame Output"><br>
+  <img src="docs/vcomp_output.png" width="75%" alt="V-Comp Frame Output"><br>
   <img src="docs/vcomp_overlay.png" width="75%" alt="V-Comp Diagnostic Overlay"><br>
   <sub>Figure 1 & 2 — Real-time compositor output with diagnostic overlay enabled.</sub>
 </p>
