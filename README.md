@@ -1,9 +1,3 @@
-
-and it will render beautifully on GitHub, GitHub Pages, or in your site docs.
-
----
-
-cat << 'EOF' > README.md
 <!-- V-Comp SSC : The World's First Vulkan-Native OS Compositor -->
 <h1 align="center">
   <img src="docs/vcomp_banner.png" width="640" alt="V-Comp SSC Logo"><br>
