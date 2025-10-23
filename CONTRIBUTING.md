@@ -27,6 +27,6 @@ All contributions must pass:
 
 For questions about contributing, please contact:
 - **Chris Waite**: 666studio.p@gmail.com
-- **GitHub Issues**: [Create an issue](https://github.com/yourusername/vizos/issues)
+- **GitHub Issues**: [Create an issue](https://github.com/yourusername/vcomp/issues)
 
 Not expected but helps tremendously CASHTAG $MikiShawv101

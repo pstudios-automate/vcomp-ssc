@@ -1,3 +1,4 @@
+cat << 'EOF' > README.md
 
 and it will render beautifully on GitHub, GitHub Pages, or in your site docs.
 
@@ -147,3 +148,4 @@ Licensed under the **MIT License**.
 <p align="center">
   <sub>⚡ V-COMP SSC — Super-Sonic Compositing Engine · Vulkan OS Core · Since 2025</sub>
 </p>
+EOF
